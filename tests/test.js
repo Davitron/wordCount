@@ -6,13 +6,12 @@ let output;
 describe("WordCount", () => {
     describe("handle valid input", () => {
         it("should return {Happy: 2, birthday: 1, my: 1, friend: 1} as wordsCount for 'Happy Happy birthday my friend", () => {
-            output = JSON.stringify({"Happy" : 2, "birthday": 1, "my": 1, "friend": 1});
-            assert.equal(JSON.stringify(words('Happy Happy birthday my friend')), output);
+            assert.deepEqual(words('Happy Happy birthday my friend'), {Happy: 2, birthday: 1, my: 1, friend: 1});
         });
 
         it("should return {olly: 2, in: 1, come: 1, free: 1} as wordsCount for 'olly olly in come free'", () => {
             output = JSON.stringify({"olly": 2, "in": 1, "come": 1, "free": 1});
-            assert.equal(JSON.stringify(words('olly olly in come free')), output);
+            assert.deepEqual(words('olly olly in come free'), {olly: 2, in: 1, come: 1, free: 1});
         });
     });
 
