@@ -1,0 +1,22 @@
+{
+  "name": "td_wordcount",
+  "version": "1.0.0",
+  "description": "an for checking word occurences sentence",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/test.js"
+  },
+  "keywords": [
+    "TDD",
+    "ES6"
+  ],
+  "author": "segun matthews",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
